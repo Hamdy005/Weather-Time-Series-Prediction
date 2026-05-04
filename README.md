@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-This project builds a Recurrent Neural Network (RNN) to forecast hourly temperature using historical weather data. The model learns temporal patterns from multiple Egyptian cities and incorporates categorical context (city and weather code) alongside cyclic time features.
+An AI-powered weather forecasting application using a custom-built, deep Long Short-Term Memory (LSTM) to predict hourly temperatures across major Egyptian cities, achieving an R2 Score of 0.71 and a Mean Absolute Error (MAE) of 0.0594.
 
 ---
 
