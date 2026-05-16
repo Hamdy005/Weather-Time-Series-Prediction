@@ -1,4 +1,5 @@
-<h1>Weather Forecasting with LSTM</h1>
+<div align="center">
+  <h1>Weather Forecasting with LSTM</h1>
   <p><strong>Sequence modeling for hourly temperature prediction across multiple cities.</strong></p>
 
   <p>
@@ -12,7 +13,7 @@
   </p>
 </div>
 
----/s
+---
 
 ## 🔍 Project Overview
 
