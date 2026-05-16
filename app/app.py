@@ -155,9 +155,17 @@ def fetch_hourly(city: dict, start_date: date, end_date: date) -> pd.DataFrame:
             "end_date": api_end.isoformat(),
             "timezone": "Africa/Cairo",
         }
-        response = requests.get(base_url, params=params, timeout=30)
-        response.raise_for_status()
-        data = response.json()
+        try:
+            response = requests.get(base_url, params=params, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+        except requests.exceptions.ConnectionError:
+            st.error("🌐 No internet connection detected. Please check your network and try again.")
+            st.stop()
+        except requests.exceptions.RequestException as e:
+            st.error(f"⚠️ An error occurred while fetching weather data: {e}")
+            st.stop()
+
         if "hourly" not in data:
             return pd.DataFrame()
         df = pd.DataFrame(data["hourly"])
