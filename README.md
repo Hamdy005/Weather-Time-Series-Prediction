@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Weather Forecasting with RNN</h1>
+  <h1>Weather Forecasting with LSTM</h1>
   <p><strong>Sequence modeling for hourly temperature prediction across multiple cities.</strong></p>
 
   <p>
@@ -13,7 +13,7 @@
   </p>
 </div>
 
----
+---/s
 
 ## 🔍 Project Overview
 
@@ -113,7 +113,7 @@ Note: Fog was not present in the collected period.
 
 ## 🧠 Model Architecture and Training
 
-The model combines three inputs: time features, city embeddings, and weather code embeddings. These are concatenated and passed through stacked SimpleRNN layers, followed by dense layers for regression.
+The model combines three inputs: time features, city embeddings, and weather code embeddings. These are concatenated and passed through stacked SimpleLSTM layers, followed by dense layers for regression.
 
 | Layer | Type | Shape / Params |
 |-------|------|----------------|
@@ -121,8 +121,8 @@ The model combines three inputs: time features, city embeddings, and weather cod
 | Input 2 | City IDs → Embedding | 6 → 4 |
 | Input 3 | Weather codes → Embedding | 6 → 8 |
 | — | Concatenate | merge all inputs |
-| RNN 1 | SimpleRNN | 64 units, return sequences |
-| RNN 2 | SimpleRNN | 32 units |
+| LSTM 1 | SimpleLSTM | 64 units, return sequences |
+| LSTM 2 | SimpleLSTM | 32 units |
 | Dense 1 | Dense + L2 regularization | 16 units |
 | Output | Dense | 1 unit |
 
