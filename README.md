@@ -1,4 +1,4 @@
-<div align="center">
+<img width="1904" height="993" alt="Screenshot from 2026-05-17 00-43-35" src="https://github.com/user-attachments/assets/18ba03d1-4dd3-4ad8-9dcb-075ebbd9dbc2" /><div align="center">
   <h1>Weather Forecasting with LSTM</h1>
   <p><strong>Sequence modeling for hourly temperature prediction across multiple cities.</strong></p>
 
@@ -26,13 +26,14 @@ An AI-powered weather forecasting application using a custom-built, deep Long Sh
 The project includes a feature-rich, responsive web dashboard built with Streamlit, providing regional weather forecasting and historical analysis.
 
 ### App Header & Region Selection
-<img src="app/assets/app_view_header.png" width="800">
+<img width="800" height="795" alt="Screenshot from 2026-05-17 00-42-36" src="https://github.com/user-attachments/assets/cef2bb38-ee51-42ff-84bd-697bd29d5341" />
 
 ### Regional Summary Cards (Morning & Night Averages)
-<img src="app/assets/app_view_summary.png" width="800">
+<img width="800" height="1026" alt="Screenshot from 2026-05-17 00-43-02" src="https://github.com/user-attachments/assets/c5097df7-090e-44d3-9a69-4cd9b7c88ae5" />
 
 ### Detailed Hourly Forecast View
-<img src="app/assets/app_view_hourly.png" width="800">
+<img width="800" height="993" alt="Screenshot from 2026-05-17 00-43-35" src="https://github.com/user-attachments/assets/81e932d9-94ce-4015-8f69-f9c333072e74" />
+
 
 > [!NOTE]
 > **Dynamic Data Fetching & Forecasting Mode:**
