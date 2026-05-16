@@ -1,5 +1,4 @@
-<img width="1904" height="993" alt="Screenshot from 2026-05-17 00-43-35" src="https://github.com/user-attachments/assets/18ba03d1-4dd3-4ad8-9dcb-075ebbd9dbc2" /><div align="center">
-  <h1>Weather Forecasting with LSTM</h1>
+<h1>Weather Forecasting with LSTM</h1>
   <p><strong>Sequence modeling for hourly temperature prediction across multiple cities.</strong></p>
 
   <p>
